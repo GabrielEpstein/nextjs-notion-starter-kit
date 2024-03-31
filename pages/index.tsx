@@ -3,7 +3,25 @@ import * as React from 'react'
 import { NotionPage } from '@/components/NotionPage'
 import { domain } from '@/lib/config'
 import { resolveNotionPage } from '@/lib/resolve-notion-page'
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
+ 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Next.js</title>
+      </head>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
+    </html>
+  );
+}
 export const getStaticProps = async () => {
   try {
     const props = await resolveNotionPage(domain)
