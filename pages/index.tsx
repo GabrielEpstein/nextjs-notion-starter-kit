@@ -21,3 +21,23 @@ export const getStaticProps = async () => {
 export default function NotionDomainPage(props) {
   return <NotionPage {...props} />
 }
+
+import { SpeedInsights } from '@vercel/speed-insights/next';
+ 
+export function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Next.js</title>
+      </head>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
+    </html>
+  );
+}
