@@ -11,7 +11,7 @@ export default siteConfig({
   // basic site info (required)
   name: 'Gabriel Epstein Project Portfolio',
   domain: 'gabriel-epstein-portfolio.vercel.app',
-  author: 'Gabe Epstein',
+  author: 'Gabriel Epstein',
 
   // open graph metadata (optional)
   description: 'My personal project portfolio. Deployed using next.js, notion, react-notion-x, and vercel.',
