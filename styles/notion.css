@@ -170,6 +170,7 @@
 .notion-title {
   display: block;
   text-align: center;
+  justify-self: center;
 }
 
 .notion-collection-row {
