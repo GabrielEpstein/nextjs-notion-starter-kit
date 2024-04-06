@@ -2,6 +2,7 @@
 import * as React from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import * as Fathom from 'fathom-client'
 // used for rendering equations (optional)
@@ -61,24 +62,11 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
-}
-import { SpeedInsights } from '@vercel/speed-insights/next';
- 
-export function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+  // Include SpeedInsights component here
   return (
-    <html lang="en">
-      <head>
-        <title>Next.js</title>
-      </head>
-      <body>
-        {children}
-        <SpeedInsights />
-      </body>
-    </html>
-  );
+    <>
+      <SpeedInsights />
+      <Component {...pageProps} />
+    </>
+  )
 }
