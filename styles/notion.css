@@ -46,7 +46,7 @@
 .notion-header .notion-nav-header {
   max-width: 1100px;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .notion-nav-header-rhs {
@@ -70,7 +70,7 @@
 
 .notion-gallery-grid .notion-collection-card-property {
   white-space: unset;
-  text-overflow: hidden;
+  text-overflow: unset;
 }
 
 .notion-gallery-grid .notion-property-text {
@@ -87,7 +87,7 @@
 }
 
 .notion-collection-card {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .notion-collection-card-cover {
