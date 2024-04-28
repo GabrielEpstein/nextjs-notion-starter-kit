@@ -87,7 +87,7 @@
 }
 
 .notion-collection-card {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .notion-collection-card-cover {
