@@ -17,8 +17,8 @@ export default siteConfig({
   description: 'My personal project portfolio. Deployed using next.js, notion, react-notion-x, and vercel.',
 
   // social usernames (optional)
-  github: 'gabrielepstein',
-  linkedin: 'gabriel-epstein',
+  github: 'GabrielEpstein',
+  linkedin: 'gabriel-epstein/',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
