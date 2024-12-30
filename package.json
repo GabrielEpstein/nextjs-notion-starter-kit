@@ -7,11 +7,11 @@
   "repository": "transitive-bullshit/nextjs-notion-starter-kit",
   "license": "MIT",
   "engines": {
-    "node": ">=16"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "next dev",
-    "postinstall": "patch-package", 
+    "postinstall": "patch-package",
     "build": "next build",
     "start": "next start",
     "deploy": "vercel deploy",
@@ -53,7 +53,8 @@
     "react-notion-x": "^7.2.5",
     "react-tweet-embed": "^2.0.0",
     "react-use": "^17.4.2",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.3.1",
