@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+// global styles shared across the entire site
+import * as React from 'react'
+import type { AppProps } from 'next/app'
+import { useRouter } from 'next/router'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+import * as Fathom from 'fathom-client'
+>>>>>>> 27988a38029ed2e8fb2d086a3a79c4027bf3d6fd
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css'
 // used for code syntax highlighting (optional)
@@ -61,5 +71,11 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  // Include SpeedInsights component here
+  return (
+    <>
+      <SpeedInsights />
+      <Component {...pageProps} />
+    </>
+  )
 }

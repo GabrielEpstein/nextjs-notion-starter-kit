@@ -47,7 +47,7 @@ export async function pageAcl({
       return {
         error: {
           statusCode: 404,
-          message: `Notion page "${pageId}" doesn't belong to the Notion workspace owned by "${site.domain}".`
+          message: `Wait a second... "${pageId}" doesn't belong to my workspace!`
         }
       }
     }

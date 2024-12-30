@@ -79,7 +79,7 @@
 
 .notion-collection-card {
   border-radius: 16px;
-  box-shadow: none;
+  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.3);
 }
 
 .notion-collection-card-cover img {
@@ -92,7 +92,7 @@
 
 .notion-collection-card-cover {
   border-radius: 16px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  box-shadow: none;
 }
 
 .notion-collection-card-cover {
@@ -164,11 +164,13 @@
 .notion .notion-page-icon-cover {
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
 .notion-title {
   display: block;
   text-align: center;
+  justify-self: center;
 }
 
 .notion-collection-row {
@@ -181,7 +183,7 @@
 
 .notion-collection-row-property .notion-property {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .notion-collection-row-value {

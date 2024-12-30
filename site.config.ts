@@ -6,7 +6,7 @@ export default siteConfig({
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: '399cee57-9fa5-4f84-821a-89e1f321ebeb',
 
   // basic site info (required)
   name: 'Gabriel Epstein Project Portfolio',
@@ -17,9 +17,9 @@ export default siteConfig({
   description: 'My personal project portfolio. Deployed using next.js, notion, react-notion-x, and vercel.',
 
   // social usernames (optional)
-  //twitter: 'transitive_bs',
-  github: 'GabrielEpstein',
-  linkedin: 'gabriel-epstein/',
+  twitter: 'transitive_bs',
+  github: 'transitive-bullshit',
+  linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
